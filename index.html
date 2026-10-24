@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>LangLearn - 多语种在线学习平台</title>
+  <meta name="description" content="支持英语、日语、韩语的沉浸式语言学习平台，提供分级课程、互动练习、进度追踪与成就激励。">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <div id="app"></div>
+
+  <!-- 核心库 -->
+  <script src="js/storage.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/speech.js"></script>
+
+  <!-- 数据 -->
+  <script src="js/data/courses.js"></script>
+  <script src="js/data/badges.js"></script>
+
+  <!-- 应用核心 -->
+  <script src="js/app.js"></script>
+
+  <!-- 页面模块 -->
+  <script src="js/pages/auth.js"></script>
+  <script src="js/pages/home.js"></script>
+  <script src="js/pages/courses.js"></script>
+  <script src="js/pages/learn.js"></script>
+  <script src="js/pages/progress.js"></script>
+  <script src="js/pages/community.js"></script>
+  <script src="js/pages/achievement.js"></script>
+  <script src="js/pages/profile.js"></script>
+
+  <!-- 启动 -->
+  <script>
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', () => App.init());
+    } else {
+      App.init();
+    }
+  </script>
+</body>
+</html>
